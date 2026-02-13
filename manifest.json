@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Brave Search Smooth Arrow Scrolling",
+    "description": "Disables jumpy arrow-key link focus on Brave Search and restores smooth scrolling",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://search.brave.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
